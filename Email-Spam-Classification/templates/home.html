@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color:rgb(29, 11, 109);
+                text-align: center;
+                padding: 40px;
+            }
+        
+            h1 {
+                color: white;
+            }
+        
+            textarea {
+                width: 60%;
+                height: 150px;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                border-color: yellow;
+                resize: vertical;
+                font-size: 16px;
+                color: black;
+            }
+        
+            input[type="submit"] {
+                background-color:rgb(255, 255, 255);
+                color: black;
+                padding: 10px 25px;
+                border: none;
+                border-radius: 5px;
+                border-color: yellow;
+                cursor: pointer;
+                cursor-color: white;
+                font-size: 16px;
+            }
+        
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <h1>Hello, World!</h1>
+        <h1>Spam Classification <h1>
+        <form action="/predict" method="post">
+            <textarea name="email_text" rows="10" cols="50" placeholder="Enter your email here..."></textarea><br><br>
+            <input type="submit" value="Classify">
+        </form>
+
+    </body>
+</html>
